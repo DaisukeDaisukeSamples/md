@@ -56,7 +56,7 @@ $data = $this->config->getAll();
 ```php
 $data = $this->config->getAll(true);
 ```
-# 事前に用意したconfig.ymlファイルを使用できるようにする
+## 事前に用意したconfig.ymlファイルを使用できるようにする
 
 plugin.ymlがあるフォルダにresourcesと言うフォルダを作っておく
 そこにconfig.ymlファイルを置いておいてください
