@@ -1,6 +1,6 @@
 # コンフィグ
 
-以下のすべてのコードに以下のコードを必要なので記載しておいてください。
+以下のすべてのコードに以下のコードを必要なので記載します。
 ```php
 use pocketmine\utils\Config;
 ```
@@ -22,8 +22,10 @@ $this->config->set("データ名", "値");//値と名前を設定
 ```php
 $this->config->save();//設定を保存
 ```
-```
-
+```php
+public function onDisable(){
+	
+}
 ```
 ## configファイルから値を取得
 ```php
