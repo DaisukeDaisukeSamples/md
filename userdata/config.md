@@ -8,11 +8,10 @@ use pocketmine\utils\Config;
 ```php
 //引数1:configファイルまでの場所とconfigファイル名,引数2:configファイルのフォーマット
 //引数3:configファイルに入れるデータ
-$this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML,
-array(
+$this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML,[
         'test' => 'data',
         'データ名(キー)' => '値'
-));
+]);
 ```
 ## configファイルに値をセット
 ```php
@@ -52,7 +51,7 @@ $this->config->remove("削除するキー");
 ```php
 $data = $this->config->getAll();
 ```
-//キーが欲しい場合は以下のようにしてください(通常は使用しません)
+//キーを取得...(通常は使用しません)
 ```php
 $data = $this->config->getAll(true);
 ```
